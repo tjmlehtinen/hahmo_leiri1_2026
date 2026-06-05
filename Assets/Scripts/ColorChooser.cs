@@ -17,9 +17,8 @@ public class ColorChooser : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SelectPart(PartSelector part)
     {
-        
+        this.partSelector = part;
     }
 }

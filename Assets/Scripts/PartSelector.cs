@@ -23,6 +23,21 @@ public class PartSelector : MonoBehaviour
         }
         partRenderer.sprite = parts[currentIndex];
     }
+    public Color GetColor()
+    {
+        return partRenderer.color;
+    }
     public void SetColor(Color color)
-    {}
+    {
+        partRenderer.color = color;
+    }
+    public int GetIndex()
+    {
+        return currentIndex;
+    }
+    public void SetIndex(int index)
+    {
+        currentIndex = index;
+        partRenderer.sprite = parts[currentIndex];
+    }
 }
